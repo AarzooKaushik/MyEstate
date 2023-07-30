@@ -492,15 +492,16 @@ const hideMenu = document.querySelector(".hide-btn");
 const navBar = document.querySelector(".navbar");
 const backdrop = document.querySelector(".backdrop");
 menuButton.addEventListener("click", () => {
-  navBar.style.width = "40%";
+  navBar.classList.add("nav-open");
   backdrop.style.width = "100%";
 });
 
 hideMenu.addEventListener("click", () => {
-  navBar.style.width = "0";
+  navBar.classList.remove("nav-open");
   backdrop.style.width = "0";
 });
 backdrop.addEventListener("click", () => {
-  navBar.style.width = "0";
+  navBar.classList.remove("nav-open");
+
   backdrop.style.width = "0";
 });

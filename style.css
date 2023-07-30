@@ -37,6 +37,7 @@ html {
   z-index: 99999999;
 }
 .overlay-text {
+  padding: 3rem;
   max-width: 1200px;
   width: 100%;
   font-size: 9rem;
@@ -145,6 +146,9 @@ button {
   align-items: center;
   z-index: 9999999999;
 }
+.nav-open {
+  width: 50%;
+}
 .navbar ul {
   padding: 3rem;
 }
@@ -211,12 +215,18 @@ nav {
 }
 
 .page1-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 3rem;
   position: absolute;
   bottom: 10%;
-  left: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999999;
 }
 
 .page1-content-inner {
+  max-width: 60rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -514,4 +524,54 @@ input:-webkit-autofill:active {
   max-width: 1200px;
   padding: 0 30px;
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-open {
+    width: 60%;
+  }
+  .large-heading {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .page1-content-inner {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 3rem;
+  }
+  .content-container {
+    padding: 0 1rem;
+  }
+  .page1-content {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+  nav {
+    padding: 2rem 1rem;
+  }
+  .nav-open {
+    width: 100%;
+  }
+  .page1-content-inner p {
+    font-size: 1.5rem;
+  }
+  .large-heading {
+    font-size: 4.5rem;
+  }
+  .navbar ul li {
+    font-size: 4.8rem;
+  }
 }
