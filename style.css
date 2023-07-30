@@ -241,7 +241,6 @@ nav {
 .container {
   display: flex;
   justify-content: center;
-
   height: 100vh;
   width: 100%;
   background-color: var(--secondary-color);
@@ -392,7 +391,7 @@ nav {
   margin-top: 3rem;
   background-color: #083ccc;
   border: none;
-  padding: 15px 30px;
+  padding: 1.5rem 3rem;
   border: 2px solid #083ccc;
   transition: 0.5s;
 }
@@ -402,7 +401,7 @@ nav {
 }
 .page-11-header {
   max-width: 1200px;
-  padding: 0 30px;
+  padding: 0 3rem;
   margin: auto;
 }
 .social-contacts {
@@ -449,7 +448,7 @@ nav {
 }
 .footer-grid {
   max-width: 1200px;
-  padding: 0 30px;
+  padding: 0 3rem;
   margin: 6.4rem auto;
   display: grid;
   gap: 5rem;
@@ -522,7 +521,7 @@ input:-webkit-autofill:active {
 .copyright-para {
   font-size: 2rem;
   max-width: 1200px;
-  padding: 0 30px;
+  padding: 0 3rem;
   margin: auto;
 }
 
@@ -548,6 +547,19 @@ input:-webkit-autofill:active {
   .primary-heading {
     font-size: 4rem;
   }
+  .page-8 {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+  .page-8-content {
+    gap: 3rem;
+  }
+  .page-10 .blog-container .blog {
+    gap: 1rem;
+  }
+  .footer-grid {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -566,8 +578,54 @@ input:-webkit-autofill:active {
   .page1-content {
     padding: 0 1rem;
   }
+  .container {
+    height: auto;
+    padding: 6.4rem 0;
+  }
+  .container video {
+    height: 100vh;
+  }
+  .glass-content {
+    width: 100%;
+    bottom: 10%;
+  }
+  .page-8 {
+    padding: 6.4rem 1rem;
+  }
+  .page-9 {
+    padding: 6.4rem 0;
+  }
+  .page-10 .blog-container .blog {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .page-10 {
+    padding: 6.4rem 0;
+  }
+  .page-11 {
+    padding: 6.4rem 0;
+  }
+  .page-11-header {
+    padding: 0 1rem;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  .copyright-para {
+    padding: 0 1rem;
+  }
+  .social-contacts div p {
+    padding: 3rem 1rem;
+  }
+  .page-11-header .large-heading {
+    font-size: 5rem;
+  }
 }
 @media (max-width: 500px) {
+  .large-heading {
+    font-size: 5rem;
+  }
   .logo {
     font-size: 2.2rem;
   }
@@ -592,6 +650,19 @@ input:-webkit-autofill:active {
   }
   .secondary-heading {
     font-size: 1.8rem;
+  }
+  .page-8-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+  }
+  .page-8-content p {
+    font-size: 1.6rem;
+  }
+  .page-9 .card {
+    min-width: 40rem;
+  }
+  .page-11-header .large-heading {
+    font-size: 4rem;
   }
 }
 @media (max-width: 400px) {

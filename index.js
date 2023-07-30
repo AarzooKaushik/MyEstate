@@ -394,8 +394,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   animateCharacters();
-
-  window.addEventListener("resize", animateCharacters);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -428,8 +426,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   animateCharacters();
-
-  window.addEventListener("resize", animateCharacters);
 });
 
 //// slider
