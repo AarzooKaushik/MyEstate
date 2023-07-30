@@ -539,6 +539,15 @@ input:-webkit-autofill:active {
   .large-heading {
     font-size: 6rem;
   }
+  .overlay-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    font-size: 5.5rem;
+  }
+  .primary-heading {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -550,6 +559,9 @@ input:-webkit-autofill:active {
   }
   .content-container {
     padding: 0 1rem;
+  }
+  .overlay-text {
+    padding: 1rem;
   }
   .page1-content {
     padding: 0 1rem;
@@ -565,13 +577,28 @@ input:-webkit-autofill:active {
   .nav-open {
     width: 100%;
   }
+  .page1-content {
+    bottom: 20%;
+  }
   .page1-content-inner p {
     font-size: 1.5rem;
   }
-  .large-heading {
-    font-size: 4.5rem;
-  }
+
   .navbar ul li {
     font-size: 4.8rem;
+  }
+  .primary-heading {
+    font-size: 3rem;
+  }
+  .secondary-heading {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .overlay-text {
+    font-size: 4rem;
+  }
+  .large-heading {
+    font-size: 4.5rem;
   }
 }
